@@ -133,7 +133,7 @@
     <a href="#day-3" class="js-scroll scroll-to"></a>
   </section>
 
-  <section class="section section-pad day day-3" id="day-3">
+  <section class="section section-pad day day-3 bg-cover" id="day-3">
     <div class="container center">
       <h3 class="date">
         Sunday Nov 12
@@ -327,5 +327,39 @@ export default defineComponent({
 
 .mix-difference {
   mix-blend-mode: difference;
+}
+
+.day-1 {
+  background-color: #fd76a7;
+}
+
+.day-2 {
+  background-color: #1bb190;
+}
+
+.day-3 {
+  background-image: url("../assets/images/day-3.jpg");
+}
+
+.day {
+  text-align: center;
+}
+
+.lineup h2 {
+  font-size: 56px;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.lineup p {
+  font-size: 21px;
+  margin-bottom: 24px;
+}
+
+.date {
+  font-size: 28px;
+  color: #ffeecf;
+  margin-bottom: 48px;
+  line-height: 1;
 }
 </style>
