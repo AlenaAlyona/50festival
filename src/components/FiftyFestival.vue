@@ -300,7 +300,17 @@ export default {
   mix-blend-mode: difference;
 }
 
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-2000vw);
+  }
+}
+
 .marquee span {
+  animation: moveLeft 200s infinite;
   white-space: nowrap;
   display: block;
   position: relative;
