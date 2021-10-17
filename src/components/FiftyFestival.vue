@@ -181,7 +181,7 @@
     <a href="#register" class="js-scroll scroll-to"></a>
   </section>
 
-  <section class="section" id="register">
+  <section class="section flex-column" id="register">
     <div class="register section-pad">
       <div class="container">
         <div class="eyes"></div>
@@ -221,6 +221,7 @@
 import { defineComponent } from "vue";
 import "@/assets/css/shapes.css";
 import "@/assets/css/viewport.css";
+import "@/assets/css/footer.css";
 
 const inView = require("in-view");
 
