@@ -223,14 +223,6 @@ export default {
 };
 </script>
 
-<style>
-body {
-  font-family: "LunchType-Regular", sans-serif;
-  font-size: 18px;
-  line-height: 1.5;
-}
-</style>
-
 <style scoped>
 .section {
   min-height: 100vh;

@@ -13,4 +13,10 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+#app {
+  font-family: "LunchType-Regular", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+</style>
