@@ -233,7 +233,6 @@ export default defineComponent({
   methods: {
     circleAnimation(): void {
       const circles = document.querySelectorAll(".circle");
-      console.log(circles);
 
       return circles.forEach((circle, index) => {
         circle.animate(
@@ -250,9 +249,33 @@ export default defineComponent({
         );
       });
     },
+    random(min: number, max: number): number {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    },
+    squiggleAnimation(): void {
+      const squiggles = document.querySelectorAll(".squiggle");
+
+      squiggles.forEach((squiggle, index) => {
+        const randomNumber = this.random(0, 45);
+
+        return squiggle.animate(
+          [
+            { transform: "rotate(0deg)" },
+            { transform: `rotate(${randomNumber}deg)` },
+            { transform: "rotate(0deg)" },
+          ],
+          {
+            delay: 300 * index,
+            duration: 5000,
+            iterations: Infinity,
+          }
+        );
+      });
+    },
   },
   mounted() {
     this.circleAnimation();
+    this.squiggleAnimation();
   },
 });
 </script>
@@ -369,6 +392,7 @@ export default defineComponent({
 .day {
   text-align: center;
   position: relative;
+  overflow: hidden;
 }
 
 .day .container {
