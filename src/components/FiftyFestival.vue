@@ -286,7 +286,7 @@ export default defineComponent({
       inView.threshold(0.2);
       const sections = document.querySelectorAll(".section");
 
-      sections.forEach((section) => {
+      return sections.forEach((section) => {
         const artists = section.querySelectorAll<HTMLElement>(".lineup li");
         const shapes = section.querySelectorAll<HTMLElement>(".shape");
 
@@ -300,7 +300,8 @@ export default defineComponent({
           shape.style.transitionDelay = delay + "ms";
         });
       });
-
+    },
+    smoothScroll(): void {
       const scrollLinks = document.querySelectorAll(".js-scroll");
 
       return scrollLinks.forEach((link) => {
@@ -319,6 +320,7 @@ export default defineComponent({
     this.sectionInViewport();
     this.circleAnimation();
     this.squiggleAnimation();
+    this.smoothScroll();
   },
 });
 </script>
