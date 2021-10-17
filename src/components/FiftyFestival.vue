@@ -230,6 +230,30 @@ export default defineComponent({
       return new Array(50).fill(title).join(" — ");
     },
   },
+  methods: {
+    circleAnimation(): void {
+      const circles = document.querySelectorAll(".circle");
+      console.log(circles);
+
+      return circles.forEach((circle, index) => {
+        circle.animate(
+          [
+            { transform: "scale(1)" },
+            { transform: "scale(1.2)" },
+            { transform: "scale(1)" },
+          ],
+          {
+            delay: 300 * index,
+            duration: 3000,
+            iterations: Infinity,
+          }
+        );
+      });
+    },
+  },
+  mounted() {
+    this.circleAnimation();
+  },
 });
 </script>
 
