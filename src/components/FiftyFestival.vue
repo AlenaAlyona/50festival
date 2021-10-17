@@ -4,10 +4,10 @@
       <a class="logo appear">
         <img src="@/assets/images/logo.svg" />
       </a>
-      <div class="marquee difference">
-        <span></span>
+      <div class="marquee mix-difference">
+        <span>FIFTY Music Festival — November 10–12, Desert Valley</span>
       </div>
-      <div class="difference appear">
+      <div class="mix-difference appear">
         <p>
           Held in the beautiful San Bernadino, CA, the first annual FIFTY Music
           Festival is an unmissable event. Over the course of 3 days, we invite
@@ -287,5 +287,26 @@ export default {
   animation-duration: 3s;
   animation-delay: 2s;
   animation-fill-mode: forwards;
+}
+
+.marquee {
+  position: absolute;
+  top: 3vh;
+  left: 0;
+  width: 100%;
+  font-size: 5vw;
+  line-height: 1;
+  overflow: hidden;
+  mix-blend-mode: difference;
+}
+
+.marquee span {
+  white-space: nowrap;
+  display: block;
+  position: relative;
+}
+
+.mix-difference {
+  mix-blend-mode: difference;
 }
 </style>
