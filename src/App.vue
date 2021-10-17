@@ -8,7 +8,7 @@ import FiftyFestival from "./components/FiftyFestival.vue";
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    FiftyFestival,
   },
 };
 </script>
