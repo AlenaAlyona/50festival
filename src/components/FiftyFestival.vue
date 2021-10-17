@@ -460,4 +460,21 @@ export default defineComponent({
   margin-bottom: 48px;
   line-height: 1;
 }
+
+.scroll-to {
+  position: absolute;
+  left: 50%;
+  bottom: 3vh;
+  width: 64px;
+  height: 32px;
+  background-image: url("../assets/images/down-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transform: translateX(-50%);
+}
+
+.scroll-to-intro {
+  background-image: url("../assets/images/down-arrow-light.svg");
+}
 </style>
