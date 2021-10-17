@@ -220,6 +220,7 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import "@/assets/css/shapes.css";
+import "@/assets/css/viewport.css";
 
 const inView = require("in-view");
 
