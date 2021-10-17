@@ -221,6 +221,8 @@
 import { defineComponent } from "vue";
 import "@/assets/css/shapes.css";
 
+const inView = require("in-view");
+
 export default defineComponent({
   name: "FiftyFestival",
 
@@ -272,8 +274,49 @@ export default defineComponent({
         );
       });
     },
+    sectionInViewport(): void {
+      inView(".section")
+        .on("enter", (section: any) => {
+          section.classList.add("in-viewport");
+        })
+        .on("exit", (section: any) => {
+          section.classList.remove("in-viewport");
+        });
+      inView.threshold(0.2);
+      const sections = document.querySelectorAll(".section");
+
+      sections.forEach((section) => {
+        const artists = section.querySelectorAll<HTMLElement>(".lineup li");
+        const shapes = section.querySelectorAll<HTMLElement>(".shape");
+
+        artists.forEach((artist, index) => {
+          const delay = index * 100;
+          artist.style.transitionDelay = delay + "ms";
+        });
+
+        shapes.forEach((shape, index) => {
+          const delay = (artists.length + index) * 100;
+          shape.style.transitionDelay = delay + "ms";
+        });
+      });
+
+      const scrollLinks = document.querySelectorAll(".js-scroll");
+
+      return scrollLinks.forEach((link) => {
+        link.addEventListener("click", (event) => {
+          event.preventDefault();
+
+          const href = link.getAttribute("href")!;
+          console.log(href);
+          document.querySelector(href)!.scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    },
   },
   mounted() {
+    this.sectionInViewport();
     this.circleAnimation();
     this.squiggleAnimation();
   },
