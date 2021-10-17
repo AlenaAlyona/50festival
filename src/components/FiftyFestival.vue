@@ -307,7 +307,6 @@ export default defineComponent({
           event.preventDefault();
 
           const href = link.getAttribute("href")!;
-          console.log(href);
           document.querySelector(href)!.scrollIntoView({
             behavior: "smooth",
           });
