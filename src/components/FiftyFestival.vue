@@ -219,6 +219,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import "@/assets/css/shapes.css";
 
 export default defineComponent({
   name: "FiftyFestival",
@@ -343,6 +344,12 @@ export default defineComponent({
 
 .day {
   text-align: center;
+  position: relative;
+}
+
+.day .container {
+  position: relative;
+  z-index: 2;
 }
 
 .lineup h2 {
