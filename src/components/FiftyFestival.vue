@@ -343,6 +343,7 @@ export default defineComponent({
 }
 
 .intro {
+  background-color: #111;
   background-image: url("../assets/images/intro.jpg");
   color: #ffffff;
 }
@@ -400,7 +401,6 @@ export default defineComponent({
   font-size: 5vw;
   line-height: 1;
   overflow: hidden;
-  mix-blend-mode: difference;
 }
 
 @keyframes moveLeft {
@@ -479,5 +479,34 @@ export default defineComponent({
 
 .scroll-to-intro {
   background-image: url("../assets/images/down-arrow-light.svg");
+}
+
+@media (max-width: 800px) {
+  .scroll-to {
+    display: none;
+  }
+}
+
+@media (max-width: 670px) {
+  .marquee {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 90vw;
+    margin-bottom: 24px;
+  }
+
+  .logo {
+    max-width: 64px;
+    margin-bottom: 24px;
+  }
+
+  .intro p {
+    font-size: 20px;
+  }
+
+  .lineup h2 {
+    font-size: 30px;
+  }
 }
 </style>
