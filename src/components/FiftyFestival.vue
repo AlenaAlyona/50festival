@@ -5,7 +5,7 @@
         <img src="@/assets/images/logo.svg" />
       </a>
       <div class="marquee mix-difference">
-        <span>FIFTY Music Festival — November 10–12, Desert Valley</span>
+        <span>{{ marqueeAnimation }}</span>
       </div>
       <div class="mix-difference appear">
         <p>
@@ -222,6 +222,13 @@ import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "FiftyFestival",
+
+  computed: {
+    marqueeAnimation(): string {
+      const title = "FIFTY Music Festival — November 10–12, Desert Valley";
+      return new Array(50).fill(title).join(" — ");
+    },
+  },
 });
 </script>
 
