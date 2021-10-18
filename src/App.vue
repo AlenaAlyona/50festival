@@ -17,7 +17,10 @@ export default defineComponent({
 <style>
 #app {
   font-family: "LunchType-Regular", sans-serif;
-  font-size: 18px;
   line-height: 1.5;
+}
+
+html {
+  font-size: 62.5%;
 }
 </style>

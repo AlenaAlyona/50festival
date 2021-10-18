@@ -3,8 +3,8 @@
 }
 
 .circle {
-  height: 93px;
-  width: 93px;
+  height: 9.3rem;
+  width: 9.3rem;
   background-color: #ffeecf;
   border-radius: 100%;
 }
@@ -50,8 +50,8 @@
 }
 
 .squiggle {
-  width: 303px;
-  height: 63px;
+  width: 30.3rem;
+  height: 6.3rem;
   background-image: url("../images/squiggle.svg");
   background-size: contain;
   background-repeat: no-repeat;

@@ -331,7 +331,7 @@ export default defineComponent({
 }
 
 .container {
-  max-width: 810px;
+  max-width: 81rem;
   margin: auto;
 }
 
@@ -342,17 +342,17 @@ export default defineComponent({
 }
 
 .intro p {
-  font-size: 36px;
+  font-size: 3.6rem;
   line-height: 1.2;
 }
 
 .logo {
   display: block;
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 3.2rem;
   margin-left: auto;
   margin-right: auto;
-  max-width: 112px;
+  max-width: 11.2rem;
 }
 
 .logo img {
@@ -368,7 +368,7 @@ export default defineComponent({
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(2rem);
   }
   50% {
     transform: translate(0);
@@ -440,29 +440,30 @@ export default defineComponent({
 }
 
 .lineup h2 {
-  font-size: 56px;
+  font-size: 5.6rem;
   line-height: 1;
-  margin-bottom: 6px;
+  margin-bottom: 0.6rem;
 }
 
 .lineup p {
-  font-size: 21px;
-  margin-bottom: 24px;
+  font-size: 2.1rem;
+  margin-bottom: 2.4rem;
 }
 
 .date {
-  font-size: 28px;
+  font-size: 2.8rem;
   color: #ffeecf;
-  margin-bottom: 48px;
+  margin-bottom: 4.8rem;
   line-height: 1;
 }
 
 .scroll-to {
   position: absolute;
+  /* margin-top: 2rem; */
   left: 50%;
   bottom: 3vh;
-  width: 64px;
-  height: 32px;
+  width: 6.4rem;
+  height: 3.2rem;
   background-image: url("../assets/images/down-arrow.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -474,32 +475,32 @@ export default defineComponent({
   background-image: url("../assets/images/down-arrow-light.svg");
 }
 
-@media (max-width: 800px) {
+@media (max-width: 50rem) {
   .scroll-to {
     display: none;
   }
 }
 
-@media (max-width: 670px) {
+@media (max-width: 42rem) {
   .marquee {
     position: relative;
     top: auto;
     left: auto;
     width: 90vw;
-    margin-bottom: 24px;
+    margin-bottom: 2.4rem;
   }
 
   .logo {
-    max-width: 64px;
-    margin-bottom: 24px;
+    max-width: 6.4rem;
+    margin-bottom: 2.4rem;
   }
 
   .intro p {
-    font-size: 20px;
+    font-size: 2rem;
   }
 
   .lineup h2 {
-    font-size: 30px;
+    font-size: 3rem;
   }
 }
 </style>
