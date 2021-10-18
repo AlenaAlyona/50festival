@@ -189,16 +189,9 @@
           <h2 class="lunch-medium">
             Register for festival updates
           </h2>
-          <form action="" method="post" id="subForm" class="sign-up">
-            <input
-              placeholder="Enter your email"
-              id="fieldEmail"
-              name=""
-              type="email"
-              required
-              class="email-input"
-            />
-            <input type="submit" value="Submit" class="submit" />
+          <form class="sign-up">
+            <input placeholder="Enter your email" class="email-input" />
+            <input type="submit" class="submit" />
           </form>
         </div>
         <div class="hand"></div>
