@@ -48,12 +48,26 @@
   display: flex;
   border-bottom: solid 2px #00b290;
   padding-bottom: 12px;
+  cursor: text;
+}
+
+.submit {
+  cursor: pointer;
 }
 
 input {
   background: none;
   border: none;
   font-size: 21px;
+  outline: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s;
+  -webkit-text-fill-color: black !important;
 }
 
 .email-input {
