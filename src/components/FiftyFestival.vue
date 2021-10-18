@@ -191,7 +191,7 @@
           </h2>
           <form class="sign-up">
             <input placeholder="Enter your email" class="email-input" />
-            <input type="submit" class="submit" />
+            <input type="submit" class="submit" disabled />
           </form>
         </div>
         <div class="hand"></div>
