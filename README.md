@@ -7,7 +7,7 @@ I made this project as a part of SuperHi Course "Advanced CSS + Javascript" <br/
 
 I'd like to mention I didn't just follow it but also added some changes myself.
 
-First of all, SuperHi has its own editor and publishes your project for you, which is nice indeed but I don't really need it, so
+First of all, SuperHi has its own editor and publishes your project for you, which is nice indeed but I don't really need it, so <br/>
 :white_check_mark: I made this site using Vue 3 and deployed it on Netlify
 
 :white_check_mark: converted px to rem
