@@ -97,3 +97,17 @@
   right: 0%;
   bottom: 5%;
 }
+
+@media (max-width: 44rem) {
+  .squiggle {
+    width: 20rem;
+    height: 4rem;
+  }
+}
+
+@media (max-width: 22.5rem) {
+  .squiggle {
+    width: 15rem;
+    height: 3rem;
+  }
+}

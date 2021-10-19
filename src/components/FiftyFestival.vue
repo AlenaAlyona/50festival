@@ -21,7 +21,7 @@
 
   <section class="section section-pad day day-1" id="day-1">
     <div class="container center">
-      <h3 class="date">
+      <h3 class="date fisrt-day-title">
         Friday Nov 10
       </h3>
       <ul class="lineup">
@@ -459,7 +459,7 @@ export default defineComponent({
 
 .scroll-to {
   position: absolute;
-  /* margin-top: 2rem; */
+  margin-top: 2rem;
   left: 50%;
   bottom: 3vh;
   width: 6.4rem;
@@ -501,6 +501,12 @@ export default defineComponent({
 
   .lineup h2 {
     font-size: 3rem;
+  }
+}
+
+@media (max-width: 38rem) {
+  .fisrt-day-title {
+    filter: invert(0.9);
   }
 }
 </style>
