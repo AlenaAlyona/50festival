@@ -10,8 +10,6 @@ I'd like to mention I didn't just follow it but also added some changes myself.
 First of all, SuperHi has its own editor and publishes your project for you, which is nice indeed but I don't really need it, so <br/>
 :white_check_mark: I made this site using Vue 3 and deployed it on Netlify
 
-:white_check_mark: I used Typescript (but to be honest, in the future I won't do it in such type of projects because it's way too simple and obvious what each function returns. It's just a landing page where user can't do anything except scrolling up/down the page)
-
 :white_check_mark: converted px to rem
 
 :white_check_mark: added media queries for squiggles (as their size didn't change no matter what screen size it was)
