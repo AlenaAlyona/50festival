@@ -10,6 +10,7 @@ I'd like to mention I didn't just follow it but also added some changes myself.
 First of all, SuperHi has its own editor and publishes your project for you, which is nice indeed but I don't really need it, so <br/>
 :white_check_mark: I made this site using Vue 3 and deployed it on Netlify
 
+other changes:<br/>
 :white_check_mark: converted px to rem
 
 :white_check_mark: added media queries for squiggles (as their size didn't change no matter what screen size it was)
@@ -18,7 +19,7 @@ First of all, SuperHi has its own editor and publishes your project for you, whi
 
 :blue_book: small side note: I disabled submit button as I don't want to collect any data (this project wasn't the purpose of it), but it was interesting to get to know that you can achieve this by using [Campaign Monitor](https://www.campaignmonitor.com/)
 
-:crystal_ball: I truly enjoyed doing [50 FESTIVAL project](https://50-festival.netlify.app/) and learnt new CSS and Javascript tricks.
+:crystal_ball: I truly enjoyed doing [50 FESTIVAL project](https://50-festival.netlify.app/), learnt new CSS and Javascript tricks.
 
 ## Project setup
 
