@@ -1,6 +1,6 @@
 # 50festival
 
-[50-festival.netlify.app](https://50-festival.netlify.app/) <br/>
+<a href="https://50-festival.netlify.app/" target="_blank">50-festival.netlify.app</a><br/>
 ![](./src/assets/gif/50Festival_fullscreen.gif)
 ![](./src/assets/gif/50Festival_responsiveness.gif) <br/>
 I made this project as a part of SuperHi Course "Advanced CSS + Javascript" <br/>
