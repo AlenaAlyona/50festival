@@ -426,7 +426,7 @@ html {
   }
 }
 
-@media (max-width: 42rem) {
+@media (max-width: 420px) {
   .marquee {
     position: relative;
     top: auto;
@@ -449,7 +449,7 @@ html {
   }
 }
 
-@media (max-width: 38rem) {
+@media (max-width: 380px) {
   .fisrt-day-title {
     filter: invert(0.9);
   }
