@@ -420,15 +420,17 @@ html {
   background-image: url("./assets/images/down-arrow-light.svg");
 }
 
-@media (max-width: 600px) {
+@media (max-width: 660px) {
   .scroll-to {
     display: none;
   }
 
   .date {
-    padding-top: 5vh;
+    padding-top: 2vh;
   }
+}
 
+@media (max-width: 600px) {
   .fisrt-day-title {
     filter: invert(0.9);
   }
