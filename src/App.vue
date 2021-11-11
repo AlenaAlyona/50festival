@@ -420,9 +420,17 @@ html {
   background-image: url("./assets/images/down-arrow-light.svg");
 }
 
-@media (max-width: 50rem) {
+@media (max-width: 600px) {
   .scroll-to {
     display: none;
+  }
+
+  .date {
+    padding-top: 5vh;
+  }
+
+  .fisrt-day-title {
+    filter: invert(0.9);
   }
 }
 
@@ -446,12 +454,6 @@ html {
 
   .lineup h2 {
     font-size: 3rem;
-  }
-}
-
-@media (max-width: 380px) {
-  .fisrt-day-title {
-    filter: invert(0.9);
   }
 }
 </style>
